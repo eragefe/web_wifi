@@ -1,0 +1,1 @@
+gmediarender -f "GDis    "$(hostname -I) --gstout-initial-volume-db=-20

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+while :
+do
+   if nmcli con show --active | grep wlan0 >/dev/nul 2>&1
+   then
+      sleep 10
+   fi
+   if nmcli con show --active | grep wlan0 >/dev/nul 2>&1
+   then
+      sleep 10
+   else
+      nmcli device wifi hotspot ssid GDis_Setup_WiFi password password >/dev/nul 2>&1
+   fi
+done

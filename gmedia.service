@@ -1,0 +1,10 @@
+[Unit]
+Description=gmediarender service
+After=multi-user.target
+
+[Service]
+ExecStart=bash /root/gmedia
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

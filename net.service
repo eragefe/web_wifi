@@ -1,0 +1,11 @@
+[Unit]
+Description=auto_net service
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=bash /root/net
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
